@@ -6,8 +6,9 @@ class Solution {
             for(int account=0;account<accounts[person].length;account++){
                 rowsum+=accounts[person][account];
             }
-            if(max<rowsum)
-                max=rowsum;
+            // if(max<rowsum)
+            //     max=rowsum;
+            max=Math.max(max,rowsum);
         }
         return max;
     }
